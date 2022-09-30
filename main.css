@@ -108,12 +108,17 @@ h1 {
 
 /*ATTRIBUTION*/
 .attribution { 
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
     font-size: 11px; 
     text-align: center; 
 }
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+    text-decoration: none;
 }
 
 /*MEDIA QUERIES*/
@@ -139,5 +144,8 @@ h1 {
     .square {
         display: grid;
     }
-  
+
+    .attribution{
+        position: static;
+    }
 }
