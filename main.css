@@ -1,0 +1,150 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+}
+
+/*TEXTFACE*/
+
+h1 {
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+.description {
+    font-weight: 400;
+    font-size: .7rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5rem;
+}
+
+.description, 
+.btn,
+.attribution {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+/*CONTAINER STYLES*/
+.wholeContain {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 700px;
+    height: 365px;
+}
+
+/*INDIVIDUAL SQUARES*/
+.square {
+    padding: 2rem;
+    height: 100%;
+    display: grid;
+    gap: 5px;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: .3em 0 0 .3em;
+
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 .3rem .3rem 0;
+}
+
+.flex {
+    display: flex;
+    align-self: center;
+}
+
+/*LEARN MORE BTN*/
+.btn{
+    font-size: 12px;
+    font-weight: 400;
+    align-self: flex-end;
+    background-color: white;
+    width: 110px;
+    padding: .5rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn1{
+    color: hsl(31, 77%, 52%);
+}
+
+.btn2{
+    color: hsl(184, 100%, 22%);
+}
+
+.btn3{
+    color: hsl(179, 100%, 13%);
+}
+
+.btn1:hover,
+.btn2:hover,
+.btn3:hover {
+    background-color: transparent;
+    color: white;
+    outline: 1px solid white;
+}
+
+/*ATTRIBUTION*/
+.attribution { 
+    position: absolute;
+    font-size: 11px; 
+    text-align: center; 
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 768px) {
+    .wholeContain{
+        display: block;
+    }
+
+    .container {
+        margin-top: 10rem;
+        grid-template-columns: 1fr;
+        width: 95vw;
+    }
+
+    .sedans {
+        border-radius: .3rem .3rem 0 0;
+    }
+
+    .luxury {
+        border-radius: 0 0 .3rem .3rem;
+    }
+
+    .square {
+        display: grid;
+    }
+  
+}
